@@ -8,31 +8,31 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function Header(){
 
-    const [darkMode,setDarkMode] = useState(false);
-    const [toggle,setToggle] = useState(false);
-    const HTML = document.querySelector("html");
-    // const to = document.querySelector(".to");
-    let ib = toggle ? <MenuIcon /> : <CloseIcon />;
+//     const [darkMode,setDarkMode] = useState(false);
+//     const [toggle,setToggle] = useState(false);
+//     const HTML = document.querySelector("html");
+//     // const to = document.querySelector(".to");
+//     let ib = toggle ? <MenuIcon /> : <CloseIcon />;
 
-    function handleClick(){
-        if(!darkMode){
-            document.body.style.backgroundColor = "#141619";
-            HTML.classList.add("dark");
-        }
-        if(darkMode){
-            document.body.style.backgroundColor = "aliceblue";
-            HTML.classList.remove("dark");
-        }
+//     function handleClick(){
+//         if(!darkMode){
+//             document.body.style.backgroundColor = "#141619";
+//             HTML.classList.add("dark");
+//         }
+//         if(darkMode){
+//             document.body.style.backgroundColor = "aliceblue";
+//             HTML.classList.remove("dark");
+//         }
 
-        setDarkMode((prevValue) => {
-            return !prevValue;
-        })
-    }
-    function onToggle(){
-        setToggle((prevValue) => {
-            return !prevValue;
-        })
-    } 
+//         setDarkMode((prevValue) => {
+//             return !prevValue;
+//         })
+//     }
+//     function onToggle(){
+//         setToggle((prevValue) => {
+//             return !prevValue;
+//         })
+//     } 
     return (<header className="z-10 flex fixed w-full justify-center mb-96 md:mb-16 lg:mb-12 backdrop-filter backdrop-blur-lg bg-opacity-30 top-0">
         <div className="nav inline-block lg:flex justify-between p-7 shadow-xl bg-gradient-to-r from-sky-200 to-sky-200 w-full flex-wrap">
             <div className="flex justify-between">
