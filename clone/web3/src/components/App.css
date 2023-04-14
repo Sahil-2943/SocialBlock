@@ -1,0 +1,12 @@
+body {
+    --twitter-color: #141619;
+    --twitter-background: #141619;
+  }
+  
+  .app {
+    /* display: flex; */
+    height: 100vh;
+    /* margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px; */
+  }
